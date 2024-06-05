@@ -29,8 +29,9 @@ console.log(result.rows);
 app.get("/", (req, res) =>{
 
     res.render("index.ejs")
+    //this change after edit and second commit
 })
-
+// bro can u see the M is means modify ok ok
 
 
 
@@ -40,6 +41,7 @@ app.post("/image", (req, res) =>{
     res.send(imageURL)
    let data =  fs.readFileSync(imageURL);
    console.log("data"+data);
+   console.log("file edit");
 
    
 
